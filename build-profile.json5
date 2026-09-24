@@ -1,0 +1,56 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\Enka\\.ohos\\config\\default_demo_ozlOmyBUYiG0KG5dYc8Zl74XVsAtY6X_bWgCJLRIyh0=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001BE416227DDAF734BBABA12924A339BBB6F1E602C73504A728BBDFE4F017B01E090BE403767114B1",
+          "profile": "C:\\Users\\Enka\\.ohos\\config\\default_demo_ozlOmyBUYiG0KG5dYc8Zl74XVsAtY6X_bWgCJLRIyh0=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\Enka\\.ohos\\config\\default_demo_ozlOmyBUYiG0KG5dYc8Zl74XVsAtY6X_bWgCJLRIyh0=.p12",
+          "storePassword": "0000001BD58B6A46C2D68B755B2453CC3EAEBFEAC200E8927E7FD3D0F9AA6A73918895995B00C05858D6F4"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "6.1.0(23)",
+        "compatibleSdkVersion": "6.1.0(23)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

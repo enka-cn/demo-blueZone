@@ -1,0 +1,20 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "冰箱清库存食谱助手"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "拍一下冰箱，给出今天能做的菜"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "冰箱清库存"
+    },
+    {
+      "name": "camera_reason",
+      "value": "用于拍摄冰箱内部照片以识别食材品类"
+    }
+  ]
+}

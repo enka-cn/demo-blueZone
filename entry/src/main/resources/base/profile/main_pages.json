@@ -1,0 +1,10 @@
+{
+  "src": [
+    "pages/Index",
+    "pages/CapturePage",
+    "pages/ReviewPage",
+    "pages/CandidatePage",
+    "pages/RecipeDetailPage",
+    "pages/ReplenishPage"
+  ]
+}

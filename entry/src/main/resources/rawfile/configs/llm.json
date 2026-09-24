@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "activeProviderId": "deepseek",
+  "providers": [
+    {
+      "id": "deepseek",
+      "label": "DeepSeek 开放平台",
+      "description": "官方多模态识别 + 食谱生成",
+      "endpoint": "https://api.deepseek.com/chat/completions",
+      "auth": { "header": "Authorization", "prefix": "Bearer " },
+      "apiKey": "",
+      "visionModel": "deepseek-flash",
+      "generationModel": "deepseek-flash",
+      "visionTemperature": 0.2,
+      "generationTemperature": 0.7,
+      "supportsJsonResponseFormat": true,
+      "connectTimeoutMs": 15000,
+      "readTimeoutMs": 60000,
+      "generationReadTimeoutMs": 180000,
+      "extraHeaders": []
+    },
+    {
+      "id": "internal-gateway",
+      "label": "内部网关",
+      "description": "公司内部 OpenAI 兼容网关，按需替换地址与模型",
+      "endpoint": "https://llm-gateway.internal.example.com/v1/chat/completions",
+      "auth": { "header": "Authorization", "prefix": "Bearer " },
+      "apiKey": "",
+      "visionModel": "qwen-vl-max",
+      "generationModel": "qwen-plus",
+      "visionTemperature": 0.2,
+      "generationTemperature": 0.7,
+      "supportsJsonResponseFormat": false,
+      "connectTimeoutMs": 8000,
+      "readTimeoutMs": 60000,
+      "generationReadTimeoutMs": 180000,
+      "extraHeaders": [
+        { "name": "X-Tenant", "value": "fridge-demo" }
+      ]
+    },
+    {
+      "id": "openai-compatible",
+      "label": "其他兼容服务",
+      "description": "任意 OpenAI Chat Completions 兼容服务",
+      "endpoint": "https://api.example.com/v1/chat/completions",
+      "auth": { "header": "Authorization", "prefix": "Bearer " },
+      "apiKey": "",
+      "visionModel": "gpt-4o-mini",
+      "generationModel": "gpt-4o-mini",
+      "visionTemperature": 0.2,
+      "generationTemperature": 0.7,
+      "supportsJsonResponseFormat": true,
+      "connectTimeoutMs": 8000,
+      "readTimeoutMs": 60000,
+      "generationReadTimeoutMs": 180000,
+      "extraHeaders": []
+    }
+  ]
+}
